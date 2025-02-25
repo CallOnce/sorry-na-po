@@ -12,22 +12,25 @@ export default function Page() {
 
   const getNoButtonText = () => {
     const phrases = [
-      "No",
-      "Are you sure?",
-      "What if I asked really nicely?",
-      "Pretty please",
-      "With a chocolate rice cake on top",
-      "What about a matcha frostie",
-      "PLEASE POOKIE",
-      "But :*(",
-      "I am going to die",
-      "Yep im dead",
-      "ok ur talking to nathan's ghost",
-      "please babe",
-      ":((((",
-      "PRETTY PLEASE",
-      "Estoy muerto",
-      "No :(",
+    "Sorry",
+    "Sorry na", 
+    "Wag ka na magalit", 
+    "Please",
+    "Bati na tayoo", 
+    "Sige na bati na tayoo", 
+    "Ganda, Bati na tayoo ahhh",
+    "T_T",
+    "Sige na ahhhh",
+    "Bati na tayo",
+    "Wag ka na magalit",
+    "Smile ka na",
+    "Yiee, Ngingiti na yan",
+    "Yieeeeee",
+    "Lab u",
+    "Sorry naaaaa, Bati na tayo",
+    "Bati na tayo",
+    "Yey Bati na tayo",
+    "Bati na <3"
     ];
 
     return phrases[Math.min(noCount, phrases.length - 1)];
@@ -38,15 +41,15 @@ export default function Page() {
       {yesPressed ? (
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I love you pookie!! ;))</div>
+          <div className="my-4 text-4xl font-bold">Yeyyyy! Bati na tayooo ;))</div>
         </>
       ) : (
         <>
           <img
             className="h-[200px]"
-            src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
+            src="https://media1.tenor.com/m/ntMIma-pGaEAAAAC/sad-cat-sad.gif"
           />
-          <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
+          <h1 className="my-4 text-4xl">I am sorry babe T_T</h1>
           <div className="flex items-center">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
