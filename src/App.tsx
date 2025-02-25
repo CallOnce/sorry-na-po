@@ -40,13 +40,15 @@ export default function Page() {
     <div className="-mt-16 flex h-screen flex-col items-center justify-center">
       {yesPressed ? (
         <>
-          <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
+         <img 
+            className="h-[350px]"
+            src="https://media1.tenor.com/m/Dtbh5RBNNvUAAAAC/happy-catto-cats.gif" />
           <div className="my-4 text-4xl font-bold">Yeyyyy! Bati na tayooo ;))</div>
         </>
       ) : (
         <>
           <img
-            className="h-[200px]"
+            className="h-[350px]"
             src="https://media1.tenor.com/m/ntMIma-pGaEAAAAC/sad-cat-sad.gif"
           />
           <h1 className="my-4 text-4xl">I am sorry babe T_T</h1>
@@ -56,13 +58,13 @@ export default function Page() {
               style={{ fontSize: yesButtonSize }}
               onClick={() => setYesPressed(true)}
             >
-              Yes
+              Bati na Tayo 
             </button>
             <button
               onClick={handleNoClick}
               className=" rounded bg-red-500 px-4 py-2 font-bold text-white hover:bg-red-700"
             >
-              {noCount === 0 ? "No" : getNoButtonText()}
+              {noCount === 0 ? "Bati na " : getNoButtonText()}
             </button>
           </div>
         </>
